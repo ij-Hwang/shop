@@ -1,0 +1,52 @@
+$메인칼라 : #ff0000;
+
+.red {
+  color : $메인칼라;
+}
+
+.my-alert {
+  background: #eee;
+  padding: 15px;
+  border-radius : 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+@mixin 함수() {
+  background: #eee;
+  padding: 15px;
+  border-radius : 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+.my-alert2 {
+  @include 함수();
+  background: #ffe591;
+
+}
+
+
+.my-alert2 p {
+  margin-bottom: 0;;
+}
+
+.wow-enter {
+  opacity: 0;
+}
+.wow-enter-active {
+  opacity: 1;
+  transition: all 1000ms;
+}
+
+.recentBox {
+  background-color: lightgray;
+  width: 150px;
+  height: 250px;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+
+  // float : right;
+}
